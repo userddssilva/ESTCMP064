@@ -6,7 +6,7 @@ from pprint import pprint
 def load_users():
     """Load users from json file"""
     global users 
-    json_file = open('users.json')
+    json_file = open('anime-dataset.json')
     users = json.load(json_file)
 
 
@@ -61,10 +61,11 @@ def main():
     load_users()
     show_users()
 
-    print(manhattan(users['Hailey'], users['Veronica']))
-    print(manhattan(users['Hailey'], users['Jordyn']))
-    print(computeNearestNeighbor("Hailey", users))
-    print(recomnend('Hailey', users))
+    # print(manhattan(users['Hailey'], users['Veronica']))
+    # print(manhattan(users['Hailey'], users['Jordyn']))
+    # print(computeNearestNeighbor("Hailey", users))
+    print("Recommend: ", recomnend('vagner', users))
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,94 @@
+{
+    "vagner": {
+        "Naruto": 3.5,
+        "Shingenki": 4.7,
+        "Sword Art Online": 3.2,
+        "One Piece": 5,
+        "Doctor Stone": 4.4,
+        "One Punch Man": 3.6
+
+    },
+    "roberto": {
+        "Naruto": 3.1,
+        "Sword Art Online": 2.2,
+        "One Piece": 3.2,
+        "Dragon Ball Z": 2.2,
+        "Nanatsu No Taizai": 1.6,
+        "Hunter x Hunter": 4.5,
+        "One Punch Man": 2.6
+
+    },
+    "larissa": {
+        "Naruto": 3.5,
+        "Death Note": 4.7,
+        "One Piece": 1.9,
+        "Nanatsu No Taizai": 4.2,
+        "Demon Slayer": 4.9,
+        "Doctor Stone": 5
+
+    },
+    "peter": {
+        "Sword Art Online": 4.2,
+        "One Piece": 3.2,
+        "Nanatsu No Taizai": 1.2,
+        "Hunter x Hunter": 3.5,
+        "Demon Slayer": 4.1,
+        "Doctor Stone": 2.3,
+        "One Punch Man": 3.9
+
+    },
+    "ana clara": {
+        "Shingenki": 4.3,
+        "Death Note": 2.3,
+        "Dragon Ball Z": 4,
+        "Nanatsu No Taizai": 2.9,
+        "Hunter x Hunter": 4.3,
+        "Doctor Stone": 2.9,
+        "One Punch Man": 1.8
+
+    },
+    "jonas": {
+        "Shingenki": 3.3,
+        "Death Note": 3.5,
+        "Sword Art Online": 3.8,
+        "Dragon Ball Z": 2.2,
+        "Nanatsu No Taizai": 3.6,
+        "Hunter x Hunter": 2.4,
+        "Demon Slayer": 3.2,
+        "One Punch Man": 3.5
+
+    },
+    "Laiandra": {
+        "Naruto": 3.6,
+        "Death Note": 2.5,
+        "Sword Art Online": 1.8,
+        "One Piece": 3.9,
+        "Dragon Ball Z": 2.6,
+        "Hunter x Hunter": 3.5,
+        "Demon Slayer": 4.8,
+        "Doctor Stone": 4.1
+
+    },
+    "vinicius": {
+        "Naruto": 3.5,
+        "Shingenki": 2,
+        "Death Note": 4,
+        "One Piece": 3,
+        "Dragon Ball Z": 4.2,
+        "Nanatsu No Taizai": 3.2,
+        "Demon Slayer": 4.4,
+        "Doctor Stone": 2.4,
+        "One Punch Man": 5
+
+    },
+    "douglas": {
+        "Naruto": 5,
+        "Shingenki": 5,
+        "Death Note": 4.4,
+        "Sword Art Online": 1.8,
+        "Dragon Ball Z": 3.5,
+        "Nanatsu No Taizai": 5,
+        "Hunter x Hunter": 3.7
+    }
+    
+}
