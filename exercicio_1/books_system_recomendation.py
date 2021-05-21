@@ -20,9 +20,7 @@ def manhattan(rating_1, rating_2):
     distance = 0.0
     for key in rating_1:
         if key in rating_2:
-            print(abs(rating_1[key] - rating_2[key]))
             distance += abs(rating_1[key] - rating_2[key])
-            print('Distance', distance)
     return distance
 
 
@@ -34,27 +32,24 @@ def computeNearestNeighbor(user_id):
         if user != user_id:
             distance = manhattan(ratings[user], ratings[user_id])
             distances.append((distance, user))
-    # sort based on distance -- closest first
-    distances.sort()
-    return distances
+    return sorted(distances)
 
 
 def recomnend(user_id):
     """Give list of recomendations"""
-    # first find nearest neighbor 
+    # 5 first neighbors
     nearest = computeNearestNeighbor(user_id)[0:5]
     recomnendations = []
-    print(nearest)
-    # now find bands neighbor rated that user didn't 
-    # neighborRatings = users[nearest]
-    # userRatings = users[user_id]
-    # for artist in neighborRatings:
-    #     if not artist in userRatings:
-    #         recomnendations.append((artist, neighborRatings[artist]))
-    # # using the fn sorted for variety - sort is more efficient
-    # return sorted(recomnendations,
-    #               key=lambda artistTuple: artistTuple[1],
-    #               reverse=True)
+    
+    # books of 5 firsts to recomnend
+    for _, neighbor in nearest:
+        for book_id in ratings[neighbor]:
+            recomnendations.append(books[book_id])
+
+    if len(recomnendations) >= 10:
+        return recomnendations[0:10]
+    else:
+        return recomnendations
 
 
 def main():
@@ -62,12 +57,14 @@ def main():
     while True:
         user_to_search = input('Choice user to show recomendation: ')
         if user_to_search in ratings:
-            recomnend(user_to_search)
-    print('__Finish__')
+            recomendations = recomnend(user_to_search)
+            print('============= Recommended books ===============')
+            for book in recomendations:
+                print(book)
+            print('===============================================')
+        else:
+            print('User deleted from database')
 
 
 if __name__ == "__main__":
     main()
-
-
-# 
