@@ -1,6 +1,6 @@
 import distances
 
-def euclidian(rating_1, rating_2):        
+def euclidean(rating_1, rating_2):        
     """Compute the euclidean distance"""
     sum_diff = 0
     for key in rating_1:

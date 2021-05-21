@@ -1,5 +1,10 @@
+import sys
+sys.path.append('../')
+
 import json 
 import os
+
+from distances import manhattan
 
 def load_data():
     """Load data from json file"""
@@ -13,15 +18,6 @@ def load_data():
     json_ratings_file = open('new_ratings_2.json', 'r')
     ratings = json.load(json_ratings_file)
     json_ratings_file.close()
-
-
-def manhattan(rating_1, rating_2):
-    """Computes the Manhattan distance"""
-    distance = 0.0
-    for key in rating_1:
-        if key in rating_2:
-            distance += abs(rating_1[key] - rating_2[key])
-    return distance
 
 
 def computeNearestNeighbor(user_id):
