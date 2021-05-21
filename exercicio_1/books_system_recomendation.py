@@ -47,7 +47,7 @@ def recomnend(user_id):
             recomnendations.append(books[book_id])
 
     if len(recomnendations) >= 10:
-        return recomnendations[0:10]
+        return recomnendations[0:9]
     else:
         return recomnendations
 
